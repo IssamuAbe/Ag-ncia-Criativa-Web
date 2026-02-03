@@ -1,115 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência Criativa Web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="dark-mode">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agência Criativa Web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="theme--dark">
 
     <header class="header">
-        <div class = "logo">Agência Criativa Web</div>
-        <nav class = "nav">
-            <ul class = "menu">
-                <li><a href = "#home">Home</a></li>
-                <li><a href = "#sobre">Sobre</a></li>
-                <li><a href = "#servicos">Serviços</a></li>
-                <li><a href = "#depoimentos">Depoimentos</a></li>
-                <li><a href = "#contato">Contato</a></li>
+        <div class="header__logo">Agência Criativa Web</div>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#sobre">Sobre</a></li>
+                <li><a class="nav__link" href="#servicos">Serviços</a></li>
+                <li><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                <li><a class="nav__link" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id = "home" class = "home">
-        <div class = "home-texto">
-            <h1>Transformamos ideias em experiências digitais</h1>
-            <p>Design moderno, responsivo e focado em resultados.</p>
+    <section id="home" class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content-title">
+                Transformamos ideias em experiências digitais
+            </h1>
+            <p class="hero__content-text">
+                Design moderno, responsivo e focado em resultados.
+            </p>
         </div>
     </section>
 
-    <section id="sobre" class="sobre">
-        <h2>Sobre Nós</h2>
-         <p>
-             Somos uma agência especializada em design digital, focada em criar
-             soluções inovadoras, funcionais e visualmente impactantes.
-             Valorizamos criatividade, tecnologia e resultados.
+    <section id="sobre" class="section section--about">
+        <h2 class="section__title">Sobre Nós</h2>
+        <p class="section__text">
+            Somos uma agência especializada em design digital, focada em criar
+            soluções inovadoras, funcionais e visualmente impactantes.
+            Valorizamos criatividade, tecnologia e resultados.
         </p>
     </section>
 
-    <section id = "servicos" class = "servicos">
-        <h2>Nossos Serviços</h2>
+    <section id="servicos" class="section section--services">
+        <h2 class="section__title">Nossos Serviços</h2>
 
-        <div class = "servicos-grid">
-            <div class = "card">
-            <img src = "2932857.png"
-                srcset="2932857.png 600w, 2932857.png 1200w"
-                alt="Design Gráfico">
-            <h3>Design Gráfico</h3>
-            <p>Identidade visual, posts e materiais gráficos.</p>
-            </div>
+        <div class="services__grid">
+            <article class="card">
+                <img
+                    class="card__icon"
+                    src="2932857.png"
+                    alt="Design Gráfico"
+                >
+                <h3 class="card__title">Design Gráfico</h3>
+                <p class="card__text">
+                    Identidade visual, posts e materiais gráficos.
+                </p>
+            </article>
 
-         <div class = "card">
-            <img src="9712483.png"
-                 srcset="9712483.png 600w, 9712483.png 1200w"
-                 alt="Desenvolvimento Web">
-            <h3>Desenvolvimento Web</h3>
-            <p>Sites modernos, rápidos e responsivos.</p>   
-         </div>
+            <article class="card">
+                <img
+                    class="card__icon"
+                    src="9712483.png"
+                    alt="Desenvolvimento Web"
+                >
+                <h3 class="card__title">Desenvolvimento Web</h3>
+                <p class="card__text">
+                    Sites modernos, rápidos e responsivos.
+                </p>
+            </article>
 
-         <div class="card">
-            <img src="1454923.png"
-                 srcset="1454923.png 600w, 1454923.png 1200w"
-                 alt="Branding">
-            <h3>Branding</h3>
-            <p>Construção e fortalecimento de marcas.</p>
-          </div>
+            <article class="card">
+                <img
+                    class="card__icon"
+                    src="1454923.png"
+                    alt="Branding"
+                >
+                <h3 class="card__title">Branding</h3>
+                <p class="card__text">
+                    Construção e fortalecimento de marcas.
+                </p>
+            </article>
         </div>
     </section>
 
-    <section id = "depoimentos" class="depoimentos">
-        <h2>O que nossos clientes dizem</h2>
+    <section id="depoimentos" class="section section--testimonials">
+        <h2 class="section__title">O que nossos clientes dizem</h2>
 
-        <div class="depoimentos-flex">
-            <blockquote>
-                "A agência superou todas as expectativas!"
-                <span>- Pedro Henrique</span>
+        <div class="testimonials__list">
+            <blockquote class="testimonials__item">
+                “A agência superou todas as expectativas!”
+                <span class="testimonials__author">– Pedro Henrique</span>
             </blockquote>
 
-            <blockquote>
-                "Design impecável e excelente atendimento!"
-                <span>- Larissa Theodoro</span>
+            <blockquote class="testimonials__item">
+                “Design impecável e excelente atendimento!”
+                <span class="testimonials__author">– Larissa Theodoro</span>
             </blockquote>
 
-            <blockquote>
-                "Recomendo para qualquer projeto digital."
-                <span>- Carlos Nogueira</span>
+            <blockquote class="testimonials__item">
+                “Recomendo para qualquer projeto digital.”
+                <span class="testimonials__author">– Carlos Nogueira</span>
             </blockquote>
         </div>
     </section>
 
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
+    <section id="contato" class="section section--contact">
+        <h2 class="section__title">Contato</h2>
 
-        <div class="contato-container">
-            <div class="info">
-                <p>📍 Sumaré - SP</p>
-                <p>📞 (12) 93456-7890</p>
-                <p>✉️ contato@agenciacriativaweb.com</p>
+        <div class="contact__container">
+            <div class="contact__info">
+                <p class="contact__text">📍 Sumaré - SP</p>
+                <p class="contact__text">📞 (12) 93456-7890</p>
+                <p class="contact__text">✉️ contato@agenciacriativaweb.com</p>
             </div>
 
-            <form class="formulario">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <textarea placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
+            <form class="contact__form">
+                <input class="contact__input" type="text" placeholder="Seu nome" required>
+                <input class="contact__input" type="email" placeholder="Seu e-mail" required>
+                <textarea class="contact__textarea" placeholder="Sua mensagem" required></textarea>
+                <button class="contact__button" type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2026 Agência Criativa Web. Todos os direitos reservados.</p>
+        <p class="footer__text">
+            © 2026 Agência Criativa Web. Todos os direitos reservados.
+        </p>
     </footer>
-    
+
 </body>
 </html>
