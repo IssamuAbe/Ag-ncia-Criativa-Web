@@ -1,0 +1,31 @@
+@use "variaveis" as v;
+
+:root {
+  --color-bg-main: #{v.$color-bg-main};
+  --color-bg-secondary: #{v.$color-bg-secondary};
+  --color-text-main: #{v.$color-text-main};
+  --color-text-secondary: #{v.$color-text-secondary};
+  --color-primary: #{v.$color-primary};
+  --color-header-footer: #{v.$color-header-footer};
+}
+
+body.theme--dark {
+  --color-bg-main: #{v.$dark-bg-main};
+  --color-bg-secondary: #{v.$dark-bg-secondary};
+  --color-text-main: #{v.$dark-text-main};
+  --color-text-secondary: #{v.$dark-text-secondary};
+  --color-primary: #{v.$dark-primary};
+  --color-header-footer: #{v.$dark-header-footer};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: v.$font-main;
+}

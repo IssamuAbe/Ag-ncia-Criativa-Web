@@ -1,0 +1,67 @@
+@use "variaveis" as v;
+@use "mixins" as m;
+
+.section {
+  @include m.section-padding;
+
+  &__title {
+    text-align: center;
+    margin-bottom: v.$gap-default;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: v.$padding-header 5vw;
+  background-color: var(--color-header-footer);
+
+  &__logo {
+    color: var(--color-text-main);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: v.$gap-default;
+    list-style: none;
+  }
+
+  &__link {
+    color: var(--color-text-main);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("694587-fundo-de-banner-elegante-tecnologia-gratis-vetor.jpg") center /
+      cover no-repeat;
+
+  @include m.flex-center;
+  text-align: center;
+
+  &__content-title {
+    color: #ffffff;
+    font-size: 3rem;
+  }
+
+  &__content-text {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: calc(v.$gap-default / 2); // operador
+  }
+}
+
+.footer {
+  background-color: var(--color-header-footer);
+  color: #ffffff;
+  text-align: center;
+  padding: v.$padding-header;
+}

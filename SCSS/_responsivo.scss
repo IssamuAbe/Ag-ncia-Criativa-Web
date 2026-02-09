@@ -1,0 +1,19 @@
+@use "variaveis" as v;
+
+@media (max-width: v.$bp-tablet) {
+  .nav__list {
+    flex-direction: column;
+    gap: calc(v.$gap-default / 2);
+  }
+
+  .hero__content-title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: v.$bp-desktop) {
+  .card__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
