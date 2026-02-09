@@ -41,8 +41,7 @@
 .hero {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("694587-fundo-de-banner-elegante-tecnologia-gratis-vetor.jpg") center /
-      cover no-repeat;
+    url("../img/694587-fundo-de-banner-elegante-tecnologia-gratis-vetor.jpg") center / cover no-repeat;
 
   @include m.flex-center;
   text-align: center;
